@@ -31,6 +31,12 @@
                        Margin="0, 10, 0, 0"
                        FontFamily="Arial" FontSize="40" FontWeight="Black"
                        Foreground="Red"/>
+                <TextBlock x:Name="LabelShow"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top" 
+                       Margin="0,100,0,0"
+                       Width="420" FontSize="16"
+                       TextAlignment="Center" />
                 <TextBlock x:Name="LabelLogin" 
                            Text="Логин" 
                            HorizontalAlignment="Left"
@@ -64,7 +70,8 @@
                         Margin="40,317,0,0" 
                         FontSize="18" Width="150"
                         BorderBrush="Black" Background="{x:Null}"
-                        IsEnabled="False"/>
+                        IsEnabled="False"
+                        Click="ButtonAuthorization_OnClick"/>
                 <Button x:Name="ButtonClear" 
                         Content="Очистить" 
                         HorizontalAlignment="Left" 

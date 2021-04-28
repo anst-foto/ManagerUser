@@ -35,6 +35,8 @@ namespace Autorization
             InputLogin.Clear();
             InputPassword.Clear();
             ButtonAuthorization.IsEnabled = false;
+            
+            LabelShow.Text = string.Empty;
         }
 
         private void ButtonCancel_OnClick(object sender, RoutedEventArgs e)
@@ -57,6 +59,26 @@ namespace Autorization
             if (InputLogin.Text != string.Empty && InputPassword.Password != string.Empty)
             {
                 ButtonAuthorization.IsEnabled = true;
+            }
+        }
+
+        private void ButtonAuthorization_OnClick(object sender, RoutedEventArgs e)
+        {
+            var inputLogin = InputLogin.Text;
+            var inputPassword = InputPassword.Password;
+
+            var login = "123"; // Временное значение
+            var password = "123"; // Временное значение
+
+            if (inputLogin == login && inputPassword == password)
+            {
+                LabelShow.Foreground = Brushes.Green;
+                LabelShow.Text = "Вы успешно авторизовались";
+            }
+            else
+            {
+                LabelShow.Foreground = Brushes.DarkRed;
+                LabelShow.Text = "Неверный логин или пароль";
             }
         }
     }
