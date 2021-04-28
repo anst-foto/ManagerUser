@@ -24,5 +24,10 @@ namespace Autorization
         {
             InitializeComponent();
         }
+
+        private void UIElement_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
     }
 }

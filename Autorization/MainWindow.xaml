@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Autorization"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ManagerUser.Autorization" Height="450" Width="450"
+        ResizeMode="NoResize" WindowStyle="None" 
+        Background="Transparent" AllowsTransparency="True">
     <Grid>
-
+        <Border 
+            Width="auto" Height="auto" 
+            BorderBrush="Black"
+            BorderThickness="2"
+            CornerRadius="0, 50, 0, 50"
+            MouseLeftButtonDown="UIElement_OnMouseLeftButtonDown">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientBrush.GradientStops>
+                        <GradientStopCollection>
+                            <GradientStop Color="#e7ebf7" Offset="0.0"></GradientStop>
+                            <GradientStop Color="#cee3ff" Offset="0.5"></GradientStop>
+                        </GradientStopCollection>
+                    </GradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                
+            </Grid>
+        </Border>
     </Grid>
 </Window>
