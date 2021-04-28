@@ -29,5 +29,35 @@ namespace Autorization
         {
             DragMove();
         }
+
+        private void ButtonClear_OnClick(object sender, RoutedEventArgs e)
+        {
+            InputLogin.Clear();
+            InputPassword.Clear();
+            ButtonAuthorization.IsEnabled = false;
+        }
+
+        private void ButtonCancel_OnClick(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void InputLogin_OnTextChanged(object sender, TextChangedEventArgs e)
+        {
+            CheckEmptyLoginPassword();
+        }
+
+        private void InputPassword_OnPasswordChanged(object sender, RoutedEventArgs e)
+        {
+            CheckEmptyLoginPassword();
+        }
+
+        private void CheckEmptyLoginPassword()
+        {
+            if (InputLogin.Text != string.Empty && InputPassword.Password != string.Empty)
+            {
+                ButtonAuthorization.IsEnabled = true;
+            }
+        }
     }
 }

@@ -43,7 +43,8 @@
                          VerticalAlignment="Top"
                          Margin="0,191,0,0" 
                          TextWrapping="Wrap"
-                         Width="420" FontSize="18"/>
+                         Width="420" FontSize="18"
+                         TextChanged="InputLogin_OnTextChanged" />
                 <TextBlock x:Name="LabelPassword" 
                            Text="Пароль" 
                            HorizontalAlignment="Left" 
@@ -54,27 +55,30 @@
                              HorizontalAlignment="Center" 
                              VerticalAlignment="Top"
                              Margin="0,257,0,0" 
-                             Width="420" FontSize="18"/>
+                             Width="420" FontSize="18"
+                             PasswordChanged="InputPassword_OnPasswordChanged"/>
                 <Button x:Name="ButtonAuthorization"
                         Content="Авторизоваться" 
                         HorizontalAlignment="Left" 
                         VerticalAlignment="Top"
                         Margin="40,317,0,0" 
                         FontSize="18" Width="150"
-                        BorderBrush="Black" Background="{x:Null}" />
+                        BorderBrush="Black" Background="{x:Null}"
+                        IsEnabled="False"/>
                 <Button x:Name="ButtonClear" 
                         Content="Очистить" 
                         HorizontalAlignment="Left" 
                         VerticalAlignment="Top"
                         Margin="259,317,0,0" 
                         FontSize="18" Width="110"
-                        Background="{x:Null}" BorderBrush="Black" />
+                        Background="{x:Null}" BorderBrush="Black" Click="ButtonClear_OnClick" />
                 <Button x:Name="ButtonCancel" 
                         Content="Отмена" 
                         HorizontalAlignment="Left" VerticalAlignment="Top"
                         Margin="374,317,0,0" 
                         FontSize="18" Width="86"
-                        Background="{x:Null}" BorderBrush="Black" />
+                        Background="{x:Null}" BorderBrush="Black" 
+                        Click="ButtonCancel_OnClick"/>
                 <TextBlock x:Name="LabelRestorePassword" 
                            HorizontalAlignment="Left" VerticalAlignment="Top"
                            Margin="315,370,0,0" 
