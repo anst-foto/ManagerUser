@@ -103,7 +103,8 @@
                         VerticalAlignment="Top"
                         Margin="259,331,0,0" 
                         FontSize="18" Width="110"
-                        Background="{x:Null}" BorderBrush="Black"/>
+                        Background="{x:Null}" BorderBrush="Black"
+                        Click="ButtonClear_OnClick"/>
                 <Button x:Name="ButtonCancel" 
                         Content="Отмена" 
                         HorizontalAlignment="Left" VerticalAlignment="Top"

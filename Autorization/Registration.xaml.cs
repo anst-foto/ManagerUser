@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace Autorization
 {
@@ -52,19 +53,46 @@ namespace Autorization
             CheckEmpty();
         }
 
+        private void CheckPasswordsEq()
+        {
+            if (InputPassword1.Password != InputPassword2.Password)
+            {
+                LabelShow.Foreground = Brushes.Brown;
+                LabelShow.Text = "Пароли не совпадают";
+            }
+            else
+            {
+                LabelShow.Foreground = Brushes.Green;
+                LabelShow.Text = "Пароли совпадают";
+            }
+        }
         private void InputPassword1_OnPasswordChanged(object sender, RoutedEventArgs e)
         {
             CheckEmpty();
+
+            CheckPasswordsEq();
         }
 
         private void InputPassword2_OnPasswordChanged(object sender, RoutedEventArgs e)
         {
             CheckEmpty();
+            
+            CheckPasswordsEq();
         }
 
         private void InputEmail_OnTextChanged(object sender, TextChangedEventArgs e)
         {
             CheckEmpty();
+        }
+
+        private void ButtonClear_OnClick(object sender, RoutedEventArgs e)
+        {
+            InputLogin.Clear();
+            InputPassword1.Clear();
+            InputPassword2.Clear();
+            InputEmail.Clear();
+
+            LabelShow.Text = string.Empty;
         }
     }
 }
