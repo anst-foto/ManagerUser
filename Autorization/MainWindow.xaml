@@ -102,7 +102,7 @@
                            FontSize="18" 
                            Width="130" 
                            TextAlignment="Left">
-                    <Hyperlink x:Name="HyperSignUp">Регистрация</Hyperlink>
+                    <Hyperlink x:Name="HyperSignUp" Click="HyperSignUp_OnClick">Регистрация</Hyperlink>
                 </TextBlock>
             </Grid>
         </Border>
