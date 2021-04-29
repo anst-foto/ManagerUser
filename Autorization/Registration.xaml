@@ -49,7 +49,8 @@
                          VerticalAlignment="Top"
                          Margin="0,121,0,0" 
                          TextWrapping="Wrap"
-                         Width="420" FontSize="18" />
+                         Width="420" FontSize="18" 
+                         TextChanged="InputLogin_OnTextChanged"/>
                 <TextBlock x:Name="LabelPassword1" 
                            Text="Пароль" 
                            HorizontalAlignment="Left" 
@@ -60,7 +61,8 @@
                              HorizontalAlignment="Center" 
                              VerticalAlignment="Top"
                              Margin="0,176,0,0" 
-                             Width="420" FontSize="18"/>
+                             Width="420" FontSize="18"
+                             PasswordChanged="InputPassword1_OnPasswordChanged"/>
                 <TextBlock x:Name="LabelPassword2" 
                            Text="Повторите пароль" 
                            HorizontalAlignment="Left" 
@@ -71,7 +73,8 @@
                              HorizontalAlignment="Center" 
                              VerticalAlignment="Top"
                              Margin="0,236,0,0" 
-                             Width="420" FontSize="18"/>
+                             Width="420" FontSize="18"
+                             PasswordChanged="InputPassword2_OnPasswordChanged"/>
                 <TextBlock x:Name="LabelEmail" 
                            Text="e-mail" 
                            HorizontalAlignment="Left"
@@ -84,13 +87,14 @@
                          VerticalAlignment="Top"
                          Margin="0,296,0,0" 
                          TextWrapping="Wrap"
-                         Width="420" FontSize="18" />
+                         Width="420" FontSize="18" 
+                         TextChanged="InputEmail_OnTextChanged" />
                 <Button x:Name="ButtonRegistration"
                         Content="Зарегистрироваться" 
                         HorizontalAlignment="Left" 
                         VerticalAlignment="Top"
                         Margin="40,331,0,0" 
-                        FontSize="18" Width="150"
+                        FontSize="18" Width="180"
                         BorderBrush="Black" Background="{x:Null}"
                         IsEnabled="False"/>
                 <Button x:Name="ButtonClear" 
