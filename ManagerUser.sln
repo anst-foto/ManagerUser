@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autorization", "Autorization\Autorization.csproj", "{B79814A5-041C-4E37-8F8F-F46E7446DAF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckPass", "CheckPass\CheckPass.csproj", "{198DD870-D089-4D41-891A-6CC57AEB0AC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{B79814A5-041C-4E37-8F8F-F46E7446DAF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B79814A5-041C-4E37-8F8F-F46E7446DAF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B79814A5-041C-4E37-8F8F-F46E7446DAF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{198DD870-D089-4D41-891A-6CC57AEB0AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{198DD870-D089-4D41-891A-6CC57AEB0AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{198DD870-D089-4D41-891A-6CC57AEB0AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{198DD870-D089-4D41-891A-6CC57AEB0AC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
