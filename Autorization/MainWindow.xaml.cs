@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -76,6 +76,13 @@ namespace Autorization
         {
             var reg = new Registration();
             reg.Show();
+            Close();
+        }
+
+        private void HyperRestorePassword_Click(object sender, RoutedEventArgs e)
+        {
+            var restore = new Restore();
+            restore.Show();
             Close();
         }
     }
