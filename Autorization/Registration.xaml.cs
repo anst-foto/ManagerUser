@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -12,6 +12,7 @@ namespace Autorization
         {
             InitializeComponent();
         }
+
 
         private void UIElement_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -51,10 +52,13 @@ namespace Autorization
         private void InputLogin_OnTextChanged(object sender, TextChangedEventArgs e)
         {
             CheckEmpty();
+            LabelShow.Foreground = Brushes.YellowGreen;
+            LabelShow.Text = "Пароль должен содержать минимум 1 большую букву, \n маленькую букву, цифру, спецсимвол";
         }
 
         private void CheckPasswordsEq()
         {
+           
             if (InputPassword1.Password != InputPassword2.Password)
             {
                 LabelShow.Foreground = Brushes.Brown;
@@ -69,6 +73,7 @@ namespace Autorization
         private void InputPassword1_OnPasswordChanged(object sender, RoutedEventArgs e)
         {
             CheckEmpty();
+           
 
             CheckPasswordsEq();
         }
